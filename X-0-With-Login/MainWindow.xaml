@@ -1,0 +1,34 @@
+﻿<Window x:Class="X_0_With_Login.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:X_0_With_Login"
+        mc:Ignorable="d"
+        Title="X - 0 Game" Height="400" Width="500">
+    <Grid Background="#04c582">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="287*"/>
+            <ColumnDefinition Width="106*"/>
+        </Grid.ColumnDefinitions>
+        <Button HorizontalAlignment="Left" Background="#545d6a" Foreground="White" VerticalAlignment="Top" Width="75" Height="75" Margin="10,57,0,0" Click="Button_Click" x:Name="A00" />
+        <Button HorizontalAlignment="Left" Background="#545d6a" Foreground="White" VerticalAlignment="Top" Width="75" Height="75" Margin="10,132,0,0" Click="Button_Click" x:Name="A10" />
+        <Button HorizontalAlignment="Left" Background="#545d6a" Foreground="White" VerticalAlignment="Top" Width="75" Height="75" Margin="10,207,0,0" Click="Button_Click" x:Name="A20" />
+        <Button HorizontalAlignment="Left" Background="#545d6a" Foreground="White" VerticalAlignment="Top" Width="75" Height="75" Margin="85,57,0,0" Click="Button_Click" x:Name="A01" />
+        <Button HorizontalAlignment="Left" Background="#545d6a" Foreground="White" VerticalAlignment="Top" Width="75" Height="75" Margin="160,57,0,0" Click="Button_Click" x:Name="A02" />
+        <Button HorizontalAlignment="Left" Background="#545d6a" Foreground="White" VerticalAlignment="Top" Width="75" Height="75" Margin="85,132,0,0" Click="Button_Click" x:Name="A11" />
+        <Button HorizontalAlignment="Left" Background="#545d6a" Foreground="White" VerticalAlignment="Top" Width="75" Height="75" Margin="85,207,0,0" Click="Button_Click" x:Name="A21" />
+        <Button HorizontalAlignment="Left" Background="#545d6a" Foreground="White" VerticalAlignment="Top" Width="75" Height="75" Margin="160,132,0,0" Click="Button_Click" x:Name="A12" />
+        <Button HorizontalAlignment="Left" Background="#545d6a" Foreground="White" VerticalAlignment="Top" Width="75" Height="75" Margin="160,207,0,0" Click="Button_Click" x:Name="A22" />
+        <Button Content="New Game" Background="#545d6a" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,337,0,0" Click="Button_Click_2"/>
+        <Button Content="Reset" Background="#545d6a" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="95,337,0,0" Click="Button_Click_3"/>
+        <Button Content="Exit" Background="#545d6a" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="14.8,337,0,0" Click="Button_Click_1" Grid.Column="1"/>
+        <Button Content="Logout" Background="#545d6a" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="14.8,313,0,0" Grid.Column="1" Click="Button_Click_4"/>
+        <TextBlock HorizontalAlignment="Center" Foreground="White" Height="25" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Margin="262,62,11.6,0" x:Name="XWin"/>
+        <TextBlock HorizontalAlignment="Center" Foreground="White" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Margin="262,97,11.6,0" x:Name="OWin"/>
+        <TextBlock HorizontalAlignment="Center" Foreground="White" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Margin="262,126,11.6,0" x:Name="Draw"/>
+        <TextBlock HorizontalAlignment="Center" Foreground="White" Height="25" TextWrapping="Wrap" Text="{Binding Path=username}" FontWeight="Bold" Padding="10 0" VerticalAlignment="Top" Width="120" Margin="10,37,157.2,0" x:Name="XWin_Copy"/>
+        <RadioButton Name="radioButton1" Content="Easy" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,17,0,0" IsChecked="True"/>
+        <RadioButton Name="radioButton2" Content="Hard" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,17,0,0"/>
+    </Grid>
+</Window>
